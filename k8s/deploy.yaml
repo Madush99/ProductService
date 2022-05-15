@@ -25,7 +25,7 @@ spec:
         app: product-service
     spec:
       containers:
-      - image: madush99/product-service-22:ae4d72b5bba805ab05be7c808563ba5548ebe53d
+      - image: madush99/product-service-22:{{tag}}
         imagePullPolicy: Always
         name: product-service-22
         resources: {}
