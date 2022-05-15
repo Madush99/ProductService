@@ -17,7 +17,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
-      context: .
+        context: .
         file: ./Dockerfile
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/product-service-22:${{ github.sha }}
