@@ -24,7 +24,7 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/product-service-22:${{ github.sha }}
-      - uses: actions-hub/kubectl@master
+    - uses: actions-hub/kubectl@master
         env:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
         with:
